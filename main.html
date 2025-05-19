@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Welcome</title>
+  <style>
+    body {
+      
+      background-image: url('back.jpg'); 
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+
+      
+      position: relative;
+      color: white;
+      font-family: "Times New Roman", Times, serif;
+
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.6); 
+      z-index: -1;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      z-index: 1;
+    }
+
+    a.btn {
+      background-color: #ff4081;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 1.5em;
+      transition: background-color 0.3s ease;
+      z-index: 1;
+    }
+
+    a.btn:hover {
+      background-color: #e03070;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to My Portfolio</h1>
+  <a href="index.html" class="btn">View My Web Developer Resume</a>
+</body>
+</html>
